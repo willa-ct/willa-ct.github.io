@@ -31,10 +31,21 @@
     body {
         font-family:"Courier New", Courier, monospace;
     }
+    div, iframe {
+        width: 100px;
+        height: 50px;
+        margin: 0 auto;
+    }
+    iframe {
+        display:block;
+        border-style: none;
+    }
         </style>
     </head>
 <body>
 <p>
-    <iframe style="border: 3px; width: 350px; height: 588px;" src="https://bandcamp.com/EmbeddedPlayer/album=3786478563/size=large/bgcol=ffffff/linkcol=f171a2/transparent=true/" seamless><a href="https://makeupdressup.bandcamp.com/album/makeup-dressup">makeup dressup by makeup dressup</a></iframe>
+    <div>
+    <iframe style="border: 0; width: 350px; height: 588px;" src="https://bandcamp.com/EmbeddedPlayer/album=3786478563/size=large/bgcol=ffffff/linkcol=f171a2/transparent=true/" seamless><a href="https://makeupdressup.bandcamp.com/album/makeup-dressup">makeup dressup by makeup dressup</a></iframe>
+    </div>
 </p>
 </body>
