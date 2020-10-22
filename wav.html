@@ -29,7 +29,6 @@
     opacity:0.6;
     overflow: hidden;
     font-size: 12px;
-    transition: max-height 0.2s ease-out;
 }
 body {
     background-image: url('peach.png');
@@ -114,7 +113,7 @@ a:active {
 </button>
 <div class="panel">
     <p class="monospace">
-    i've been thinking about the exponential growth of technology and how the human race is graduating to a world of screens. i feel like in the future, we won't be engaging with the physical 3-d world anymore. in the movie "like water for chocolate," tita is told that we all long to return to our divine origins. i personally think that what is meant by "divine origin" is both spiritual and scientific, a place where time is cyclical or nonlinear. the digital world seems to do that. clicks and taps replace physical travel and time is compressed. maybe this is why the internet is so addicting. it simulates a strong inborn desire to escape our bodies. eventually the human race will short-circuit to the divine singularity space in which we graduate to light particles.
+    i've been thinking about the exponential growth of technology and how the human race is graduating to a world of screens. i feel like in the future, we won't be engaging with the physical 3-d world anymore. in the movie "like water for chocolate," tita is told that we all long to return to our divine origins. i personally think that what is meant by "divine origin" is both spiritual and scientific, a place where time is cyclical or nonlinear. the digital world seems to do that. clicks and taps replace physical travel and time is compressed. maybe this why the internet is so addicting. it simulates a strong inborn desire to escape our bodies. eventually the human race will short-circuit to the divine singularity space in which we graduated to light particles.
     </p>
 </div>
 
@@ -123,15 +122,15 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+    acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
+    if (panel.style.display === "block") {
+        panel.style.display = "none";
+        }   else {
+        panel.style.display = "block";
+        }
+    });
 }
 </script>
 
