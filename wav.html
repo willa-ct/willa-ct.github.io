@@ -4,6 +4,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>&#9829;b l u s h&#9829;</title>
 <style>
+.accordion {
+    background-color:ivory;
+    color:rgb(216, 51, 106);
+    cursor: pointer;
+    padding: 6px 12px;
+    width: 180px;
+    border: 0.5px solid rgb(216, 51, 106);
+    opacity:0.6;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.active, .accordion:hover {
+    background-color:white;
+}
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    color:rgb(216, 51, 106);
+    overflow: hidden;
+}
 body {
     background-image: url('peach.png');
 }
@@ -19,10 +41,6 @@ ul {
     background-color:ivory;
     opacity: 0.6;
     border: 0.5px solid rgb(216, 51, 106);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
     box-shadow: 0 0 40px  rgb(255, 255, 255);
     -moz-box-shadow: 0 0 40px  rgb(255, 255, 255);
     -webkit-box-shadow: 0 0 40px  rgb(255, 255, 255);
@@ -82,9 +100,37 @@ a:active {
     <br>my favorite show right now is PEN15.
     <br>what i'm reading: "feel free" by zadie smith.
     </p>
-    <p style="color:rgb(216, 51, 106)">lately i've been thinking about the exponential growth of technology and the human race graduating to a world of screens, where lives are lived online. things are headed that way, and in a way, that's the way things are right now. soon we will be on technology so much that we won't even be engaging in reality anymore. everything will be online. i often wonder why it would have had to develop this way. i've started wondering if it has something to do with our origins as people. in the movie "like water for chocolate" tita is told that we all long to return to our divine origins. for me, what is meant by "divine origin" is a return to a spiritual space of light (in a physics sense) in which time is compressed or cyclical or not linear. and i think the internet, the digital world, does that. it compresses time and place. you can access a different part of the web in a single click, you don't have to travel there. on social media, someone documents their time in paris, uploads it to their story, and you can see it and interact with it in a single tap. perhaps this is why the internet is so addicting and why we are drawn into it, perhaps it simulates a strong inborn desire to escape our bodies. eventually the human race might short-circuit to that divine space and we'll all have graduated to light particles.
-    </p>
+    </a>
 </ul>
+<button class="accordion">
+    <p class="monospace">
+    october 21, 2020
+    </p>
+</button>
+<div class="panel">
+    <p style="font-size:10px">
+    lately i've been thinking about the exponential growth of technology and the human race fully graduating to a world of screens. in a way, that's the way things are. soon we won't be engaging with the physical 3-d world anymore. i often wonder why it would have to develop this way. in the movie "like water for chocolate,"" tita is told that we all long to return to our divine origins. "divine origin" maybe as a spiritual light (in a physics sense) space in which time is compressed, cyclical, not linear. i think the digital world does that. it compresses time and space. clicks and tap replace physical travel. perhaps this is why the internet is so addicting. perhaps it simulates a strong inborn desire to escape our bodies. eventually the human race will short-circuit to that divine singular space and we'll all have graduated to light particles.
+    </p>
+    </p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+        panel.style.display = "none";
+        }   else {
+        panel.style.display = "block";
+        }
+    });
+}
+</script>
+
 <p style="color:rgb(216, 51, 106)">
 <p class="monospace">
     <a href="mochi.html">&#9829; back</a>
