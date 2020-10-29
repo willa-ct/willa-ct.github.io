@@ -4,32 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>&#9829;b l u s h&#9829;</title>
 <style>
-.accordion {
-    background-color:ivory;
-    color:rgb(216, 51, 106);
-    cursor: pointer;
-    padding: 3px 6px;
-    width: 180px;
-    border: 0.5px solid rgb(216, 51, 106);
-    opacity:0.6;
-    text-align: left;
-    outline: none;
-    font-size: 14px;
-}
-.active, .accordion:hover {
-    background-color:ivory;
-}
-.panel {
-    padding: 6px 12px;
-    display: none;
-    background-color: ivory;
-    width: 900px;
-    border: 0.5px solid rgb(216, 51, 106);
-    color:rgb(216, 51, 106);
-    opacity:0.6;
-    overflow: hidden;
-    font-size: 12px;
-}
 body {
     background-image: url('peach.png');
 }
@@ -54,32 +28,47 @@ ul:hover {
     box-shadow: 0 0 0 0 rgb(255, 255, 255);
     transition: box-shadow 0.3s ease-out;
 }
-a:link {
+a.class1 {
     color:rgb(216, 51, 106);
-    text-decoration: none;
 }
-a:visited {
-    color:rgb(216, 51, 106);
-    text-decoration: none;
+a.class1:link {
+    text-decoration: none; color:rgb(216, 51, 106);
 }
-a:hover {
-    color:rgb(223, 174, 174);
-    text-decoration: none;
+a.class1:visited {
+    text-decoration: none; color:rgb(216, 51, 106);
 }
-a:active {
-    color:ivory;
-    text-decoration: none;
+a.class1:hover {
+    text-decoration: none; color:rgb(223, 174, 174);
 }
+a.class1:active {
+    text-decoration: none; color:ivory;
+}
+a.class2 {
+    color:rgb(238, 167, 190);
+}
+a.class2:link {
+    text-decoration: none; color: rgb(238, 167, 190);
+}
+a.class2:visited {
+    text-decoration: none; color: rgb(238, 167, 190);
+}
+a.class2:hover {
+    text-decoration: none; color: rgb(216, 51, 106);
+}
+a.class2:active {
+    text-decoration: none; color:linen; 
+}
+
 </style>
 </head>
 
 <body>
 <p style="color:rgb(252, 86, 141)">
-    <a href="test.html">experimenting</a>
+    <a href="test.html" class="class1">experimenting</a>
 </p>
 <ul>
     <p style="color: rgb(216, 51, 106)">
-    hello there! thank you for taking the time to find this page. i don't know what i'll be putting here! perhaps various musings on human consciousness being uploaded to the cloud, or the latest entries in my dream journal. 
+    hello there! thank you for taking the time to find this page. i don't know what i'll be putting here! perhaps various <a href="secretblog.html" class="class2">musings</a> on human consciousness being uploaded to the cloud, or the latest entries in my dream journal. 
     </p>
     <p style="color: rgb(216, 51, 106)">
     <b>my current projects</b><br>
@@ -89,7 +78,7 @@ a:active {
     <b>fun facts about me</b><br>
     i was born in Nanchang, China but grew up in New York City. <br>
     i have two sisters: a younger sister and an older biological sister (i met her through 23andme!)<br>
-    i'm really into personality tests and psychology. INFP, enneagram 4, and my <a href="astrology.html">astrological chart</a> definitely describe me to a T.<br>
+    i'm really into personality tests and psychology. INFP, enneagram 4, and my <a href="astrology.html" class="class2">astrological chart</a> definitely describe me to a T.<br>
     i've moved homes twice before i turned 18.
     <br>conspiracy theories are really cool! i don't believe in flat earth but the videos are compelling.<br>
     my favorite movies to date: <i>eat, drink, man, woman//tampopo//scent of green papaya//hana & alice</i> [the 2014 rotoscoped version].<br>
@@ -108,7 +97,7 @@ a:active {
 
 <p style="color:rgb(216, 51, 106)">
 <p class="monospace">
-    <a href="mochi.html">&#9829; back</a>
+    <a href="mochi.html" class="class1">&#9829; back</a>
 </p>
 <script type="text/javascript">
     var sc_project=12395965; 
