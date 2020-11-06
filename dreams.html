@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>&#9829;b l u s h&#9829;</title>
+<style>
+.accordion {
+    background-color:ivory;
+    color:rgb(216, 51, 106);
+    cursor: pointer;
+    padding: 3px 6px;
+    width: 180px;
+    border: 0.5px solid rgb(216, 51, 106);
+    opacity:0.6;
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+}
+.active, .accordion:hover {
+    background-color:ivory;
+}
+.panel {
+    padding: 6px 12px;
+    display: none;
+    background-color: ivory;
+    width: 900px;
+    border: 0.5px solid rgb(216, 51, 106);
+    color:rgb(216, 51, 106);
+    opacity:0.6;
+    overflow: hidden;
+    font-size: 12px;
+}
+body {
+    background-image: url('peach.png');
+}
+p {
+    font-family:"Courier New", Courier, monospace;
+}
+ul {
+    list-style-type: none;
+    margin-left:auto;
+    margin-right: auto;
+    padding: 6px 16px;
+    width: 700px;
+    background-color:ivory;
+    opacity: 0.6;
+    border: 0.5px solid rgb(216, 51, 106);
+    box-shadow: 0 0 40px  rgb(255, 255, 255);
+    -moz-box-shadow: 0 0 40px  rgb(255, 255, 255);
+    -webkit-box-shadow: 0 0 40px  rgb(255, 255, 255);
+    -o-box-shadow: 0 0 40px  rgb(255, 255, 255);
+}
+ul:hover {
+    box-shadow: 0 0 0 0 rgb(255, 255, 255);
+    transition: box-shadow 0.3s ease-out;
+}
+a:link {
+    color:rgb(216, 51, 106);
+    text-decoration: none;
+}
+a:visited {
+    color:rgb(216, 51, 106);
+    text-decoration: none;
+}
+a:hover {
+    color:rgb(223, 174, 174);
+    text-decoration: none;
+}
+a:active {
+    color:ivory;
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+    <button class="accordion">
+    <p style="font-size:14px;">
+    november 5, 2020
+    </p>
+</button>
+<div class="panel">
+    <p class="monospace">
+    dreamt my mom was on the dark web and was also doing her own stunts in an Iranian action film
+    </p>
+</div>
+<p class="monospace">
+    <a href="wav.html"><- back</a>
+</p>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+        panel.style.display = "none";
+        }   else {
+        panel.style.display = "block";
+        }
+    });
+}
+</script>
+</body>
+</html>
