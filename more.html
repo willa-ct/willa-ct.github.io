@@ -4,16 +4,52 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title><3</title>
 <style>
+body {
+    background-color:rgb(221, 243, 221)
+}
 p {
     font-family:"Courier New", Courier, monospace;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted darkgreen;
+  font-family:'Courier New', Courier, monospace;
+  color:darkgreen;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 400px;
+  background-color: ivory;
+  color: darkgreen;
+  text-align: center;
+  border: 0.5 darkgreen;
+  border-radius: 6px;
+  padding: 5px 0;
+  color: darkgreen;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 </style>
 </head>
 <body>
-    <p style="color:darkgreen">
-        i love declan
-    </p>
-    <iframe seamless="seamless" src="https://getyarn.io/yarn-clip/embed/25dbc7e4-5ff9-4a08-a8b3-b183a1ec6436?autoplay=false" style="border: 0;"></iframe>
+<p style="color:darkgreen">
+<div class="tooltip">i love declan
+  <span class="tooltiptext">declan's pretty special. he is truly one of the kindest, most creative, sensitive, and intelligent humans i know. my favorite thing about him is that he's a really good listener. you don't realize how little people take each other in until you find someone who really does that, and that's declan for me. on top of that, he's mad sexy and his butt is cute. every time i see his face, i'm just as attracted to him as i was on the first day. i'm so happy to know him and to have met him in this lifetime.</span>
+</div>
+</p>
+
+<iframe style="position:absolute; TOP:130px; LEFT:600px;" src="https://getyarn.io/yarn-clip/embed/25dbc7e4-5ff9-4a08-a8b3-b183a1ec6436?autoplay=false" style="border: 0;"></iframe>
 <script type="text/javascript">
         var sc_project=12395965; 
         var sc_invisible=1; 
