@@ -2,34 +2,52 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>inner life stuff</title>
+    <title>y2k text</title>
 <style>
     body {
         background-color:rgb(238, 255, 204);
         color:rgb(115, 129, 86);
         font-family:'Courier New', Courier, monospace;
     }
-    @fontface {
-        font-family: DisposableDroidBB;
-        src: url(DisposableDroidBB.tff)
-
+    textarea {
+        background-color: rgb(255, 240, 242)255, 233, 237);
+        border:0.5px solid palevioletred;
+        outline:none; 
+        font-family:'Courier New', Courier, monospace;
+        font-size: 12px;
+        resize:none;
     }
-    div {
-        font-family: DisposableDroidBB;
+    input[type=submit] {
+        background-color:paleturquoise;
+        border: 0.5px solid blue;
+        color:purple;
+        padding: 10px 10px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-family:'Courier New', Courier, monospace;
+    }
+    input[type=text] {
+        background-color:rgb(255, 212, 255);
+        border: 0.5px solid pink;
+        color:red;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-family:'Courier New', Courier, monospace;
+        outline: none;
     }
 </style>
 </head>
+
 <body>
-
-<h1>hello!</h1>
-
+<p>hello!</p>
 <form action="/action_page.php" id="usrform">
-  Name: <input type="text" name="usrname">
+  name: <input type="text" name="usrname">
   <input type="submit">
 </form>
 <br>
-<textarea rows="4" cols="50" name="comment" form="usrform" style="monospace">
+<textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Typing in here now..." cols="30" rows="5">
 </textarea>
-
 </body>
 </html>
